@@ -19,10 +19,10 @@ internal sealed class CollaboratorPublicService : ICollaboratorPublicService
     public Task<ApiResponse<DealTypeDirect>> GetDealsListAsync(int pageNumber)
         => _apiContext.HttpGetAsync<DealTypeDirect>(new GetDealsListRequest());
 
-    public Task<ApiResponse<DealType>> GetDealTypesListasync(int pageNumber)
+    public Task<ApiResponse<DealType>> GetDealTypesListAsync(int pageNumber)
         => _apiContext.HttpGetAsync<DealType>(new GetDealTypesListRequest());
 
-    public Task<ApiResponse<OwnerDeal>> GetOwnerDealsAsunc(int pageNumber)
+    public Task<ApiResponse<OwnerDeal>> GetOwnerDealsAsync(int pageNumber)
         => _apiContext.HttpGetAsync<OwnerDeal>(new GetDealOwnersListRequest());
 
     public void Dispose()
