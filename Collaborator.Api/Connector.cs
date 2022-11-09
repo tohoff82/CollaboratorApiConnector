@@ -8,7 +8,7 @@ namespace Collaborator.Api;
 
 public static class Connector
 {
-    public static void AddCryptopay(this IServiceCollection services, CollaboratorCredentials credentials, double httpLifetime = 3)
+    public static void AddCollaborator(this IServiceCollection services, CollaboratorCredentials credentials, double httpLifetime = 3)
     {
         services.AddHttpClient<ApiContext>(httpClient =>
         {
